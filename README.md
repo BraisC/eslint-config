@@ -1,4 +1,4 @@
-#Eslint and Prettier Custom Config
+# Eslint and Prettier Custom Config
 These are my settings for ESLint and Prettier with some minor modifications over the ones from [Wes Bos](https://github.com/wesbos/eslint-config-wesbos)
 
 ## Installing (in your project folder)
