@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brais",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My custom eslint config",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.7.0",
@@ -9,7 +9,6 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^4.3.0",
-    "eslint-config-wesbos": "0.0.19",
     "eslint-plugin-html": "^5.0.5",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -30,7 +29,7 @@
   ],
   "main": "index.js",
   "author": "Brais Cao",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
@@ -38,7 +37,6 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^4.3.0",
-    "eslint-config-wesbos": "0.0.19",
     "eslint-plugin-html": "^5.0.5",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -55,5 +53,6 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix"
-  }
+  },
+  "dependencies": {}
 }
