@@ -1,5 +1,5 @@
 # Eslint and Prettier Custom Config
-These are my settings for ESLint and Prettier with some minor modifications over the ones from [Wes Bos](https://github.com/wesbos/eslint-config-wesbos)
+These are my settings for ESLint and Prettier with some minor modifications over the ones from [Wes Bos](https://github.com/wesbos/eslint-config-wesbos) (like adding TypeScript support)
 
 ## Installing (in your project folder)
 
