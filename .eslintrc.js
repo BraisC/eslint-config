@@ -39,6 +39,7 @@ module.exports = {
       2,
       {
         allowTaggedTemplates: true,
+        allowTernary: true,
       },
     ],
     'no-param-reassign': [
@@ -47,6 +48,7 @@ module.exports = {
         props: false,
       },
     ],
+    'no-plusplus': 0,
     'no-console': 0,
     'import/prefer-default-export': 0,
     import: 0,
