@@ -2,11 +2,11 @@ module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2018,
-    // Can I remove these now?
+    ecmaVersion: 2020,
     ecmaFeatures: {
       impliedStrict: true,
       classes: true,
+      jsx: true,
     },
   },
   env: {
@@ -29,13 +29,14 @@ module.exports = {
       },
     ],
     'prefer-const': [
-      'error',
+      1,
       {
         destructuring: 'all',
       },
     ],
     'arrow-body-style': [2, 'as-needed'],
-    'no-unused-expressions': [
+    'no-unused-expressions': 0,
+    'babel/no-unused-expressions': [
       2,
       {
         allowTaggedTemplates: true,
@@ -109,5 +110,5 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
+  plugins: ['html', 'prettier', 'react-hooks', 'babel', 'react', 'jsx-a11y', 'import'],
 };
