@@ -117,7 +117,14 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
-        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-expressions': [
+          2,
+          {
+            allowTaggedTemplates: true,
+            allowTernary: true,
+          },
+        ],
+        'babel/no-unused-expressions': 0,
       },
     },
   ],
