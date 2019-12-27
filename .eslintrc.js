@@ -111,4 +111,14 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
   },
   plugins: ['html', 'prettier', 'react-hooks', 'babel', 'react', 'jsx-a11y', 'import'],
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
+      },
+    },
+  ],
 };
