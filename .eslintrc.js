@@ -25,7 +25,7 @@ module.exports = {
       1,
       {
         ignoreSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
+        argsIgnorePattern: 'res|next|^err|^_',
       },
     ],
     'prefer-const': [
@@ -61,6 +61,8 @@ module.exports = {
     'no-underscore-dangle': 0,
     'consistent-return': 0,
     'react/display-name': 1,
+    'react/destructuring-assignment': [0, 'always', { ignoreClassFields: true }],
+    'react/prop-types': 0,
     'react/no-array-index-key': 0,
     'react/react-in-jsx-scope': 0,
     'react/prefer-stateless-function': 0,
