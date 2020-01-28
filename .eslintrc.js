@@ -99,7 +99,7 @@ module.exports = {
       {
         singleQuote: true,
         trailingComma: 'es5',
-        printWidth: 90,
+        printWidth: 100,
       },
     ],
     'jsx-a11y/href-no-hash': 'off',
