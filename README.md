@@ -8,14 +8,14 @@ These are my settings for ESLint and Prettier with some minor modifications over
 2. Install everything needed for it to run:
 
 ```
-npx install-peerdeps --dev eslint-config-brais
+npx install-peerdeps --dev @braisc/eslint-config
 ```
 
 3. Create a `.eslintrc` file in the root of your project's directory with this content:
 
 ```json
 {
-  "extends": ["brais"]
+  "extends": ["@braisc"]
 }
 ```
 
