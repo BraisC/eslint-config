@@ -123,6 +123,15 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        ecmaVersion: 2020,
+        ecmaFeatures: {
+          impliedStrict: true,
+          classes: true,
+          jsx: true,
+        },
+        sourceType: 'module',
+      },
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-unused-expressions': [
