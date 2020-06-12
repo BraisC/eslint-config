@@ -8,6 +8,7 @@ module.exports = {
       classes: true,
       jsx: true,
     },
+    sourceType: 'module',
   },
   env: {
     browser: true,
@@ -122,7 +123,6 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      parserOptions: { sourceType: 'module' },
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-unused-expressions': [
