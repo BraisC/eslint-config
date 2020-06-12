@@ -16,6 +16,7 @@ module.exports = {
     jquery: true,
     jest: true,
   },
+
   rules: {
     'no-debugger': 0,
     'no-alert': 0,
@@ -119,19 +120,17 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
   },
   plugins: ['html', 'prettier', 'react-hooks', 'babel', 'react', 'jsx-a11y', 'import'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      parserOptions: {
-        ecmaVersion: 2020,
-        ecmaFeatures: {
-          impliedStrict: true,
-          classes: true,
-          jsx: true,
-        },
-        sourceType: 'module',
-      },
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-unused-expressions': [
