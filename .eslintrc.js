@@ -122,6 +122,7 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
+      parserOptions: { sourceType: 'module' },
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-unused-expressions': [
