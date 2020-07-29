@@ -1,6 +1,6 @@
 {
   "name": "@braisc/eslint-config",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "My custom eslint config",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": ">=3.6.1",
@@ -17,7 +17,7 @@
     "eslint-plugin-prettier": ">=3.1.1",
     "eslint-plugin-react": ">=7.20.3",
     "eslint-plugin-react-hooks": ">=4.0.8",
-    "prettier": ">=1.19.1",
+    "prettier-eslint": ">=9.0.0",
     "typescript": ">=3.7.2"
   },
   "homepage": "https://github.com/BraisC/eslint-config",
@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": ">=3.1.1",
     "eslint-plugin-react": ">=7.20.3",
     "eslint-plugin-react-hooks": ">=4.0.8",
-    "prettier": ">=1.19.1",
+    "prettier-eslint": ">=9.0.0",
     "typescript": ">=3.7.2"
   },
   "repository": {
