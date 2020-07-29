@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:react/recommended'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
@@ -130,6 +130,13 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
+      extends: [
+        'airbnb-typescript',
+        'prettier/@typescript-eslint',
+        'prettier/react',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
+      ],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
