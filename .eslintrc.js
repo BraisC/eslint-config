@@ -43,6 +43,7 @@ module.exports = {
       {
         allowTaggedTemplates: true,
         allowTernary: true,
+        allowShortCircuit: true,
       },
     ],
     'no-param-reassign': [
