@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:react/recommended'],
-  parser: '@babel/eslint-parser',
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
@@ -128,7 +128,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks', '@babel', 'react', 'jsx-a11y', 'import'],
+  plugins: ['html', 'prettier', 'react-hooks', 'babel', 'react', 'jsx-a11y', 'import'],
   settings: {
     'import/resolver': {
       node: {
