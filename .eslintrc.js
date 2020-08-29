@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:react/recommended'],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
@@ -76,6 +76,14 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/accessible-emoji': 0,
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        required: {
+          every: ['id'],
+        },
+      },
+    ],
     'react/require-default-props': 0,
     'spaced-comment': 0,
     'prefer-template': 0,
@@ -120,10 +128,11 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks', 'babel', 'react', 'jsx-a11y', 'import'],
+  plugins: ['html', 'prettier', 'react-hooks', '@babel', 'react', 'jsx-a11y', 'import'],
   settings: {
     'import/resolver': {
       node: {
+        paths: ['src'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
@@ -139,7 +148,6 @@ module.exports = {
         'plugin:react/recommended',
       ],
       parser: '@typescript-eslint/parser',
-
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-unused-expressions': [
