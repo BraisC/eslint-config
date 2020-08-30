@@ -27,7 +27,8 @@ npx install-peerdeps --dev @braisc/eslint-config
    
 ```json
 {
-  "presets": ["@babel/preset-env"]
+  "presets": ["@babel/preset-env"],
+  "plugins": ["@babel/plugin-syntax-jsx"]
 }
 ```
 

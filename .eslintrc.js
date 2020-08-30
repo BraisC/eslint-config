@@ -72,7 +72,7 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/forbid-prop-types': 0,
     'react/no-unescaped-entities': 0,
-    'react/state-in-constructor': [0, 'never'],
+    'react/state-in-constructor': [1, 'never'],
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/accessible-emoji': 0,
@@ -128,7 +128,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks', '@babel', 'react', 'jsx-a11y', 'import'],
+  plugins: ['html', 'prettier', 'react-hooks', '@babel', 'react', 'jsx-a11y'],
   settings: {
     'import/resolver': {
       node: {
