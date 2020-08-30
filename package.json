@@ -1,6 +1,6 @@
 {
   "name": "@braisc/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "BraisC custom eslint config",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": ">=3.6.1",
