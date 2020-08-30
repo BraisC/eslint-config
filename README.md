@@ -3,7 +3,11 @@ These are my settings for ESLint and Prettier with some minor modifications over
 
 ## Installing (in your project folder)
 
-1. You need a package.json file.
+1. You need a `package.json` file, so run this command if you dont have it:
+   
+```
+npm init
+```
 
 2. Install everything needed for it to run:
 
@@ -19,7 +23,15 @@ npx install-peerdeps --dev @braisc/eslint-config
 }
 ```
 
-4. You can add two scripts to your package.json to lint and/or fix:
+4. Create a `.babelrc` file in the root of your project's directory with this content:
+   
+```json
+{
+  "presets": ["@babel/preset-env"]
+}
+```
+
+5. You can add two scripts to your `package.json` to lint and/or fix:
 
 ```json
 "scripts": {
@@ -28,7 +40,7 @@ npx install-peerdeps --dev @braisc/eslint-config
 },
 ```
 
-5. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. You probably want your editor to do this though.
+6. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. You probably want your editor to do this though.
 
 
 ## With VS Code
@@ -52,15 +64,18 @@ npm install --global eslint
   "[typescript]": {
     "editor.formatOnSave": false
   },
-  // tell VSCode to autofix also TypeScript
+  // tell VSCode to autofix also TypeScript and html
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
+    "typescript",
+    "typescriptreact",
+    "html"
   ],
-  // tell the ESLint plugin to run on save
-  "eslint.autoFixOnSave": true,
+  // tess ESlint to fix on filesave
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS/JSX/TS since we are doing it through Eslint already
   "prettier.disableLanguages": ["javascript", "typescript", "javascriptreact"],
   ```
