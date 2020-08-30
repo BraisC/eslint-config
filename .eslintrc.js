@@ -160,8 +160,6 @@ module.exports = {
         'babel/no-unused-expressions': 0,
       },
     },
-  ],
-  overrides: [
     {
       files: ['**/*.test.js'],
       env: {
