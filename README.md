@@ -16,7 +16,7 @@ npm init
 npx install-peerdeps --dev @braisc/eslint-config
 ```
 
-3. Create a `.eslintrc` file in the root of your project's directory with this content:
+3. Create an `.eslintrc.json` file in the root of your project's directory with this content:
 
 ```json
 {
@@ -24,7 +24,7 @@ npx install-peerdeps --dev @braisc/eslint-config
 }
 ```
 
-4. Create a `.babelrc` file in the root of your project's directory with this two presets, the second one only if you are using React:
+4. Create a `.babelrc.json` file in the root of your project's directory with this two presets, the second one only if you are using React:
 
 ```json
 {
