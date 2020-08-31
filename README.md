@@ -24,7 +24,7 @@ npx install-peerdeps --dev @braisc/eslint-config
 }
 ```
 
-4. Create a `.babelrc` file in the root of your project's directory with this content:
+4. Create a `.babelrc` file in the root of your project's directory with this two presets, the second one only if you are using React:
 
 ```json
 {
