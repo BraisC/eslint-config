@@ -1,3 +1,10 @@
+![](https://img.shields.io/npm/v/@braisc/eslint-config?logo=npm&style=flat-square)
+![](https://img.shields.io/npm/dependency-version/@braisc/eslint-config/peer/eslint?style=flat-square)
+![](https://img.shields.io/bundlephobia/min/@braisc/eslint-config?label=size&logo=npm&style=flat-square)
+![](https://img.shields.io/npm/dw/@braisc/eslint-config?logo=npm&style=flat-square)
+![](https://img.shields.io/github/last-commit/braisc/eslint-config?logo=github&style=flat-square)
+
+
 # Eslint and Prettier Custom Config
 
 These are my settings for ESLint and Prettier with some minor modifications over the ones from [Wes Bos](https://github.com/wesbos/eslint-config-wesbos)
