@@ -9,6 +9,11 @@ module.exports = {
       jsx: true,
     },
     sourceType: 'module',
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-env'],
+      plugins: ['@babel/plugin-syntax-jsx'],
+    },
   },
   env: {
     browser: true,
@@ -64,7 +69,6 @@ module.exports = {
     'no-underscore-dangle': 0,
     'consistent-return': 0,
     'class-methods-use-this': 0,
-    'react/display-name': 1,
     'react/destructuring-assignment': [0, 'always', { ignoreClassFields: true }],
     'react/prop-types': 0,
     'react/no-array-index-key': 0,
@@ -72,6 +76,8 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/forbid-prop-types': 0,
     'react/no-unescaped-entities': 0,
+    'react/display-name': 0,
+    'react/jsx-props-no-spreading': 0,
     'react/state-in-constructor': [1, 'never'],
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,

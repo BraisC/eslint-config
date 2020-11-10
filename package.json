@@ -1,6 +1,6 @@
 {
   "name": "@braisc/eslint-config",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "description": "BraisC custom eslint config",
   "devDependencies": {
     "@babel/core": ">=7.11.4",
@@ -43,7 +43,7 @@
     "@babel/eslint-parser": ">=7.11.4",
     "@babel/eslint-plugin": ">=7.11.3",
     "@babel/preset-env": ">=7.11.0",
-    "eslint": "^6.6.0",
+    "eslint": ">=6.6.0",
     "eslint-config-airbnb": ">=18.0.1",
     "eslint-config-airbnb-typescript": ">=9.0.0",
     "eslint-config-prettier": ">=6.7.0",
