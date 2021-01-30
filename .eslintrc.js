@@ -152,6 +152,10 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
       ],
+      parserOptions: {
+        project: ['./tsconfig.json'],
+        tsconfigRootDir: __dirname,
+      },
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
