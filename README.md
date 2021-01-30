@@ -1,6 +1,3 @@
-
-
-
 # Eslint and Prettier Custom Config
 
 ![](https://img.shields.io/npm/v/@braisc/eslint-config?logo=npm&style=flat-square)

@@ -160,9 +160,11 @@ module.exports = {
           {
             allowTaggedTemplates: true,
             allowTernary: true,
+            allowShortCircuit: true,
           },
         ],
         'babel/no-unused-expressions': 0,
+        'no-console': 0,
       },
     },
     {
