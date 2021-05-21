@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:react/recommended'],
+  extends: ['airbnb', 'prettier', 'plugin:react/recommended'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
@@ -34,6 +34,7 @@ module.exports = {
         argsIgnorePattern: 'res|next|^err|^_',
       },
     ],
+    'unused-imports/no-unused-imports': 'warn',
     'prefer-const': [
       1,
       {
@@ -95,7 +96,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
       },
     ],
     radix: 0,
@@ -133,22 +134,31 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks', '@babel', 'react', 'jsx-a11y', 'import'],
+  plugins: [
+    'html',
+    'prettier',
+    'react-hooks',
+    '@babel',
+    'react',
+    'jsx-a11y',
+    'import',
+    'unused-imports',
+    'better-styled-components',
+  ],
   settings: {
     'import/resolver': {
       node: {
         paths: ['src'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
       },
     },
   },
+
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: [
         'airbnb-typescript',
-        'prettier/@typescript-eslint',
-        'prettier/react',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
       ],
@@ -159,6 +169,18 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
+        '@typescript-eslint/quotes': [
+          'error',
+          'single',
+          {
+            allowTemplateLiterals: true,
+          },
+        ],
+        'object-curly-newline': 0,
+        'operator-linebreak': 0,
+        'no-confusing-arrow': 0,
+        'implicit-arrow-linebreak': 0,
+        'react/jsx-props-no-spreading': 0,
         '@typescript-eslint/no-unused-expressions': [
           2,
           {
@@ -167,8 +189,12 @@ module.exports = {
             allowShortCircuit: true,
           },
         ],
+        '@typescript-eslint/indent': 0,
+        '@typescript-eslint/explicit-module-boundary-types': 0,
         'babel/no-unused-expressions': 0,
         'no-console': 0,
+        'react/react-in-jsx-scope': 0,
+        'import/prefer-default-export': 0,
       },
     },
     {
@@ -185,6 +211,15 @@ module.exports = {
         'jest/prefer-to-have-length': 'warn',
         'jest/valid-expect': 'error',
       },
+    },
+    {
+      files: ['**/*.mdx'],
+      env: {
+        jest: true,
+      },
+      extends: ['plugin:mdx/recommended'],
+      plugins: ['mdx'],
+      rules: {},
     },
   ],
 };

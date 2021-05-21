@@ -1,6 +1,6 @@
 {
   "name": "@braisc/eslint-config",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "BraisC custom eslint config",
   "devDependencies": {
     "@babel/core": ">=7.11.4",
@@ -18,11 +18,11 @@
     "eslint-plugin-import": ">=2.22.0",
     "eslint-plugin-jest": ">=23.20.0",
     "eslint-plugin-jsx-a11y": ">=6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-prettier": ">=3.1.4",
+    "eslint-plugin-react": ">=7.20.6",
+    "eslint-plugin-react-hooks": ">=4.1.0",
     "prettier": ">=2.0.5",
-    "typescript": "^4.0.2"
+    "typescript": ">=4.0.2"
   },
   "homepage": "https://github.com/BraisC/eslint-config",
   "keywords": [
