@@ -1,9 +1,9 @@
 {
   "name": "@braisc/eslint-config",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "description": "BraisC custom eslint config",
   "devDependencies": {
- "@babel/core": ">=7.11.4",
+    "@babel/core": ">=7.11.4",
     "@babel/eslint-parser": ">=7.11.4",
     "@babel/eslint-plugin": ">=7.11.3",
     "@babel/preset-env": ">=7.11.0",

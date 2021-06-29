@@ -226,7 +226,9 @@ module.exports = {
       },
       extends: ['plugin:mdx/recommended'],
       plugins: ['mdx'],
-      rules: {},
+      rules: {
+        'react/jsx-no-undef': [0],
+      },
     },
   ],
 };
