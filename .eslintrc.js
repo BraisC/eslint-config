@@ -165,7 +165,6 @@ module.exports = {
       ],
       parserOptions: {
         project: './tsconfig.json',
-        tsconfigRootDir: __dirname,
       },
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
