@@ -11,7 +11,7 @@ module.exports = {
     sourceType: 'module',
     requireConfigFile: false,
     babelOptions: {
-      cwd: __dirname, // The working directory that all paths in the programmatic options will be resolved relative to.
+      //cwd: __dirname, // The working directory that all paths in the programmatic options will be resolved relative to.
       presets: ['@babel/preset-env', '@babel/preset-react'],
     },
   },
